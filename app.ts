@@ -31,10 +31,12 @@
 //     a.src = 'back.jpg';
         
 //     //@ts-ignore 
+//     //start of task d
 //     await new Promise( (resolve, reject)=>{
 //         setTimeout(resolve, 12000);
 //         a.onerror = () => reject(new Error("error while loading"));
 //     });
+//     //end of task d
     
 //     document.body.appendChild(a);
 //     return a;
@@ -43,26 +45,9 @@
 // let promise:any = loadImage();
 // promise.then(success1, error1);
 // promise.then(success1).then(success1).catch(error1);
-// promise.finally(()=>console.log("done"));
+// promise.finally(()=>console.log("done"));7
 
 
-
-//task d
-// function loadImage(success,error){
-//     let a = document.createElement("img");
-//     a.src = 'back.jpg';
-//     document.body.appendChild(a);
-
-//     a.onload = success;
-//     a.onerror = error;
-// }
-
-// loadImage(() => {
-//     console.log('image loaded')},
-//      ()=>{
-//         console.log('load failed');
-//     });
-// ;
 
 
 
